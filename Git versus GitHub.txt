@@ -1,0 +1,88 @@
+
+you tube link :
+https://www.youtube.com/watch?v=B8NurikxEo8&ab_channel=AutomationStepbyStep
+
+Git versus GitHub:
+Here we explained all the things re;ated to git hub how it is connected and how to upload and download files from the git to git hub
+
+Git Setup on Local system:
+-------------------------
+1.check if git is already installed
+  git --version
+2. download Git installer from https://git-scm.com/
+3.Run installer and install git
+4.Check if git is installed git --version
+
+Create git account:
+-------------------
+1,Goto https://github,com/ and signup
+2.login to github
+3. create new repository
+
+Git Commands
+------------
+1.create new folder and open GitBash/CMD prompt and goto the folder location
+2,Run commands
+
+git config --global user.emai "yourGitHub@email.com"
+git config --global user.emai "yourGitHubusername"
+
+3. initialize Git
+ git init
+4. Add some files in the folder
+5.Run commands 
+ git status
+git add
+ git commit -m"---"
+
+
+commands:
+1.Create a branch
+  git branch "branch name"
+2.checkout branch 
+  git checkout "branch name"
+3. Make some changes in your project
+   Do add, commit,push...> git push -u origin newbranch
+   Check the branch is visible in GitHub repository
+4.on local checkout master master
+  git checkout master
+5. Merge new branch in master branch 
+   git merge "branch name"
+6.Push the changes
+  git push -u origin master
+7. Delete branch
+ git branch -d "branch name" //will delete from local
+git push origin --delete "branch name"
+
+Git Tags:
+---------
+1. checkout the branch where you want to create a tag
+   git checkout "branch name" 
+   ex- git checkout master
+2. Create tag with some name 
+   git tag "tagname"
+   ex- git tag v1.0
+3. display or show tags 
+   git tag
+   git show v1.0
+4.Push tags to remote 
+  git push origin v1.0
+5.Delete tags(if required only)
+  to delete tags from local:  git tag -d v1.0
+                              git tag --delete v1.0
+
+Checking out TAGS:
+------------------
+we cannot checkout tags in git
+we can create a branch from a tag and checkout the branch
+git checkout -b "branch name" "tag name"
+ex- hit checkout -b ReleaseVer1 v1.0
+
+Creating Tags from past commits:
+--------------------------------
+git tag "tag name""reference of commit"
+ex- git tag v1.2 sfcdb03
+
+
+ 
+
